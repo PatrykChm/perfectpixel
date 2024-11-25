@@ -390,5 +390,14 @@ main .header .content .first-content a:hover {
 main .header .content .second-content {
   width: 50%;
   height: 100%;
-  background-color: yellow;
+  background-color: rgb(13, 59, 18);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */
