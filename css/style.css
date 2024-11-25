@@ -382,7 +382,7 @@ main .header .content .first-content a {
   margin-top: 3rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 main .header .content .first-content a:hover {
   background-color: rgba(190, 190, 190, 0.27);
