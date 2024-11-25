@@ -168,7 +168,6 @@ html {
 .navbar {
   width: 100%;
   top: 0;
-  position: fixed;
   z-index: 2;
   background-color: #fff;
   -webkit-box-shadow: 0 4px 4px -5px #000;
@@ -315,4 +314,81 @@ html {
   .navbar__item:hover a {
     color: #fff;
   }
+}
+main section {
+  padding: 60px;
+}
+main .header {
+  height: 900px;
+  background-color: #12500a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .header .content {
+  height: 100%;
+  max-width: 1920px;
+  width: 100%;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .header .content .first-content {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .header .content .first-content h3 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  color: black;
+}
+main .header .content .first-content h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: black;
+}
+main .header .content .first-content h2 span {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(342deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .header .content .first-content a {
+  padding: 15px 10px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  width: 20%;
+  text-align: center;
+  margin-top: 3rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+main .header .content .first-content a:hover {
+  background-color: rgba(190, 190, 190, 0.27);
+}
+main .header .content .second-content {
+  width: 50%;
+  height: 100%;
+  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */
