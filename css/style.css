@@ -123,23 +123,18 @@ html {
   border: 0;
   background: transparent;
 }
-
 .hamburger__box {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 24px;
 }
-
 .hamburger__inner {
   top: auto;
   bottom: 0;
   right: 0;
 }
-
-.hamburger__inner,
-.hamburger__inner:after,
-.hamburger__inner:before {
+.hamburger__inner, .hamburger__inner::after, .hamburger__inner::before {
   position: absolute;
   width: 40px;
   height: 4px;
@@ -147,21 +142,11 @@ html {
   display: block;
   border-radius: 4px;
 }
-
-.hamburger__inner:after,
-.hamburger__inner:before {
+.hamburger__inner::after, .hamburger__inner::before {
   content: "";
   top: -10px;
 }
-
-.hamburger__inner:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 4px;
-  background-color: #000;
-  display: block;
-  border-radius: 4px;
+.hamburger__inner::before {
   top: -20px;
 }
 
@@ -173,7 +158,6 @@ html {
   -webkit-box-shadow: 0 4px 4px -5px #000;
           box-shadow: 0 4px 4px -5px #000;
 }
-
 .navbar__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,17 +171,14 @@ html {
   height: 80px;
   overflow: hidden;
 }
-
 .navbar__nav a.logo {
   text-decoration: none;
   font-size: 28px;
   color: #000;
 }
-
 .navbar__nav i {
   padding-right: 5px;
 }
-
 .navbar__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,22 +208,20 @@ html {
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
   transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  border-bottom-left-radius: 16px;
 }
-
 .navbar__item {
   list-style: none;
   display: inline-block;
   cursor: pointer;
   font-size: 2.5rem;
 }
-
 .navbar__item a {
   color: #000;
   text-decoration: none;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-
 .navbar__item:hover a {
   color: #12500a;
 }
@@ -300,18 +279,19 @@ html {
     background: none;
     position: static;
     width: auto;
+    gap: 0;
   }
-  .navbar__item {
+  .navbar__list .navbar__item {
     margin-top: 0;
     padding: 28px;
     font-size: 20px;
     -webkit-transition: color 0.3s, background-color 0.3s;
     transition: color 0.3s, background-color 0.3s;
   }
-  .navbar__item:hover {
+  .navbar__list .navbar__item:hover {
     background-color: #000;
   }
-  .navbar__item:hover a {
+  .navbar__list .navbar__item:hover a {
     color: #fff;
   }
 }
@@ -335,10 +315,11 @@ main .header .content {
   height: 100%;
   max-width: 1920px;
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid rgba(141, 141, 141, 0.467);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 18px;
 }
 main .header .content .first-content {
   width: 50%;
@@ -353,6 +334,7 @@ main .header .content .first-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px;
 }
 main .header .content .first-content h3 {
   font-size: 3.5rem;
@@ -390,7 +372,6 @@ main .header .content .first-content a:hover {
 main .header .content .second-content {
   width: 50%;
   height: 100%;
-  background-color: rgb(13, 59, 18);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,4 +381,29 @@ main .header .content .second-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+main .header .content .second-content img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  main section {
+    padding: 25px;
+  }
+  main .header .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .header .content .first-content {
+    width: 100%;
+  }
+  main .header .content .second-content {
+    width: 100%;
+  }
+  main .header .content .first-content a {
+    width: 80%;
+    max-width: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */
