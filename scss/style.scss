@@ -191,13 +191,12 @@ main {
 	}
 
 	.header {
-		height: 650px;
 		background: rgb(213, 240, 235);
 		background: linear-gradient(38deg, rgba(213, 240, 235, 1) 0%, rgba(158, 221, 211, 1) 100%);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 40px;
+		padding: 0;
 
 		.content {
 			height: 100%;
@@ -208,7 +207,6 @@ main {
 
 			.first-content {
 				width: 50%;
-				height: 100%;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -347,6 +345,10 @@ main {
 	}
 }
 
+.swiper {
+	padding-left: 25px;
+	padding-right: 25px;
+}
 // ----------------
 // MEDIA
 // ----------------
@@ -364,8 +366,29 @@ main {
 	main .header .content .second-content {
 		width: 100%;
 	}
-	main .header .content .first-content a {
-		width: 80%;
-		max-width: 250px;
+	main .listen .wrapper .listen-content {
+		flex-direction: column;
+	}
+	main .listen .wrapper .listen-content .listen-box {
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+	main .listen .wrapper .listen-content .listen-box.box-two .box-text {
+		width: 100%;
+	}
+	main .listen .wrapper .listen-content .listen-box.box-two .box-img {
+		width: 100%;
+	}
+	main .listen .wrapper .listen-content .listen-box.box-two .box-img img {
+		width: unset;
+	}
+	main .listen .wrapper .listen-content .listen-box.box-one .box-text {
+		width: 100%;
+	}
+	main .listen .wrapper .listen-content .listen-box.box-one .box-img {
+		width: 100%;
+	}
+	main .listen .wrapper .listen-content .listen-box.box-one .box-img img {
+		width: unset;
 	}
 }
