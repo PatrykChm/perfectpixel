@@ -12,7 +12,9 @@ html {
 	font-family: 'Instrument Sans', sans-serif;
 }
 
-
+main {
+	overflow-x: hidden;
+}
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -160,6 +162,7 @@ html {
 	z-index: 2;
 	background-color: #fff;
 	box-shadow: 0 4px 4px -5px #000;
+	position: sticky;
 }
 .navbar__nav {
 	display: flex;
@@ -187,12 +190,12 @@ html {
 	right: 0;
 	opacity: 0;
 	transform: translateX(100%);
-	overflow: hidden;
-	position: absolute;
 	background-color: #624848;
 	transition: all 0.3s;
 	z-index: 100;
 	justify-content: center;
+	position: fixed;
+	overflow-x: hidden;
 }
 .navbar__item {
 	list-style: none;
@@ -211,9 +214,8 @@ html {
 }
 
 .show-menu {
-	opacity: 1;
-
 	transform: translateX(0);
+	opacity: 1;
 }
 
 @-webkit-keyframes a {
