@@ -15,6 +15,10 @@ html {
 main {
 	overflow-x: hidden;
 }
+
+main section {
+	padding: 60px;
+}
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -270,9 +274,6 @@ main {
 	}
 }
 
-main section {
-	padding: 60px;
-}
 .header {
 	background: rgb(213, 240, 235);
 	background: linear-gradient(38deg, rgb(213, 240, 235) 0%, rgb(158, 221, 211) 100%);
@@ -323,10 +324,12 @@ main section {
 	text-align: center;
 	background-color: #00c39c;
 	margin-top: 3rem;
-	transition: background-color 0.3s;
+	transition: all 0.3s;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .header .content .first-content a:hover {
 	background-color: #00c39c;
+	box-shadow: #01a05ebf 0px 7px 29px 0px;
 }
 .header .content .second-content {
 	width: 50%;
@@ -437,6 +440,8 @@ main section {
 	.header .content {
 		flex-direction: column;
 		padding-bottom: 60px;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 	.header .content .first-content {
 		width: 100%;
@@ -475,6 +480,7 @@ main section {
 	.swiper-button-prev {
 		top: unset;
 		bottom: 10px;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	}
 
 	.swiper-button-prev {
