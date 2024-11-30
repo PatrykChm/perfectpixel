@@ -502,7 +502,6 @@ main section {
 .why-us-wrapper {
 	max-width: 1600px;
 	margin: 0 auto;
-	padding: 25px;
 	border: 1px solid red;
 }
 
@@ -562,5 +561,17 @@ main section {
 	}
 	.why-us-content .row {
 		flex-direction: column;
+	}
+
+	.why-us-header h2 {
+		font-size: 3.2rem;
+	}
+	.why-us-header p {
+		font-size: 1.8rem;
+		font-weight: 400;
+		color: #ffffff;
+	}
+	.why-us-content .box .box-copy h3 {
+		font-size: 2.6rem;
 	}
 }
