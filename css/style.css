@@ -491,7 +491,10 @@ main section {
 }
 
 /* WHY US SECTION */
-
+.why-us .material-symbols-outlined {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
 .why-us {
 	background-color: #2e3047;
 }
@@ -535,22 +538,29 @@ main section {
 }
 
 .why-us-content .box {
-	width: 50%;
-	height: 100%;
+	width: 33%;
 	border: 1px solid red;
 	padding: 25px;
 	color: white;
-	min-height: 250px;
+	border-radius: 10px;
+	background-color: #3f42619e;
+	display: flex;
+	flex-direction: column;
 }
 
-.why-us-content .box i {
-	font-size: 50px;
-	margin-bottom: 20px;
-}
 .why-us-content .box .box-copy h3 {
 	font-size: 28px;
 	margin-bottom: 12px;
 }
 .why-us-content .box .box-copy p {
 	font-size: 16px;
+}
+
+@media (max-width: 992px) {
+	.why-us-content .box {
+		width: 100%;
+	}
+	.why-us-content .row {
+		flex-direction: column;
+	}
 }
