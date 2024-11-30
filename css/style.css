@@ -6,6 +6,10 @@
 	padding: 0;
 }
 
+:root {
+	--primary-color: #00c39c;
+}
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -18,11 +22,6 @@ main {
 
 main section {
 	padding: 60px;
-}
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
 }
 
 .white-block {
@@ -322,7 +321,7 @@ main section {
 	color: rgb(255, 255, 255);
 	max-width: 220px;
 	text-align: center;
-	background-color: #00c39c;
+	background-color: var(--primary-color);
 	margin-top: 3rem;
 	transition: all 0.3s;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -489,4 +488,69 @@ main section {
 	.swiper-button-next {
 		right: 10%;
 	}
+}
+
+/* WHY US SECTION */
+
+.why-us {
+	background-color: #2e3047;
+}
+
+.why-us-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 25px;
+	border: 1px solid red;
+}
+
+.why-us-header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+
+.why-us-header h2 {
+	font-size: 42px;
+}
+.why-us-header p {
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+}
+.why-us-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.why-us-content .row {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+	border: 1px solid green;
+	margin-bottom: 20px;
+}
+
+.why-us-content .box {
+	width: 50%;
+	height: 100%;
+	border: 1px solid red;
+	padding: 25px;
+	color: white;
+	min-height: 250px;
+}
+
+.why-us-content .box i {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.why-us-content .box .box-copy h3 {
+	font-size: 28px;
+	margin-bottom: 12px;
+}
+.why-us-content .box .box-copy p {
+	font-size: 16px;
 }
