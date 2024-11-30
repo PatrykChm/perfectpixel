@@ -10,10 +10,10 @@ var navList = document.querySelector('.navbar__list'),
 menuButton.addEventListener('click', showMobileMenu), navList.addEventListener('click', removeMobileMenu)
 
 var swiper = new Swiper('.mySwiper', {
-	// autoplay: {
-    //     delay: 5500,
-    //     disableOnInteraction: false
-    //   },
+	autoplay: {
+		delay: 5500,
+		disableOnInteraction: false,
+	},
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'progressbar',
