@@ -23,6 +23,11 @@ main {
 main section {
 	padding: 60px;
 }
+.cta--outline {
+	background-color: transparent;
+	border: 1px solid #3066be;
+	color: #3066be;
+}
 
 .white-block {
 	position: absolute;
@@ -508,7 +513,6 @@ main section {
 .why-us-wrapper {
 	max-width: 1600px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
 .why-us-header {
@@ -518,7 +522,7 @@ main section {
 	justify-content: center;
 	gap: 10px;
 	color: #060125;
-	margin-bottom: 25px;
+	margin-bottom: 45px;
 }
 
 .why-us-header h2 {
@@ -541,19 +545,23 @@ main section {
 	display: flex;
 	width: 100%;
 	gap: 20px;
-	border: 1px solid green;
+
 	margin-bottom: 20px;
 }
 
 .why-us-content .box {
 	width: 33%;
-	border: 1px solid red;
+	border: 1px solid #3066be71;
 	padding: 25px;
 	color: #05012b;
 	border-radius: 10px;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
+	transition: border 0.3s;
+}
+.why-us-content .box:hover {
+	border: 1px solid #3066be;
 }
 
 .why-us-content .box .box-copy h3 {
