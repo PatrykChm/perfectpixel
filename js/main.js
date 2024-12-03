@@ -23,3 +23,6 @@ var swiper = new Swiper('.mySwiper', {
 		prevEl: '.swiper-button-prev',
 	},
 })
+
+var copy = document.querySelector('.logos-slide').cloneNode(true)
+document.querySelector('.logos').appendChild(copy)

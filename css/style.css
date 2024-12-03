@@ -351,7 +351,6 @@ main section {
 	padding: 0;
 }
 .listen .wrapper {
-	border: 1px solid red;
 	padding: 0;
 }
 .listen .wrapper .listen-content {
@@ -421,6 +420,9 @@ main section {
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 	background: #3066be;
+}
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+	height: 8px;
 }
 
 .swiper-button-prev,
@@ -593,4 +595,92 @@ main section {
 	.why-us-content .box .box-copy h3 {
 		font-size: 2.6rem;
 	}
+}
+
+/* TECHNOLOGIES STYLES */
+
+.technologies {
+	padding: 0;
+	background: rgb(162, 162, 162);
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.logos {
+	overflow: hidden;
+	padding: 60px 0;
+	background: rgb(162, 162, 162);
+	white-space: nowrap;
+	position: relative;
+}
+
+.logos:before,
+.logos:after {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	content: '';
+	z-index: 2;
+}
+
+.logos:before {
+	left: 0;
+	background: linear-gradient(to left, rgba(162, 162, 162, 0), rgb(162, 162, 162));
+}
+
+.logos:after {
+	right: 0;
+	background: linear-gradient(to right, rgba(162, 162, 162, 0), rgb(162, 162, 162));
+}
+
+/* .logos:hover .logos-slide {
+	animation-play-state: paused;
+  } */
+
+.logos-slide {
+	display: inline-block;
+	animation: 25s slide infinite linear;
+}
+
+.logos-slide img {
+	height: 60px;
+	margin: 0 40px;
+	filter: grayscale(1);
+	transition: filter 0.5s;
+}
+.logos-slide img:hover {
+	filter: grayscale(0);
+}
+
+@media (max-width: 1000px) {
+	.logos-slide img {
+		filter: grayscale(0);
+	}
+}
+
+/* WHY WORTH STYLES */
+
+.whyworth-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.whyworth-header {
+	color: #050037;
+}
+.whyworth-header h2 {
+	font-size: 4.2rem;
+}
+.whyworth-header span {
+	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
