@@ -176,7 +176,7 @@ main section {
 .navbar {
 	width: 100%;
 	top: 0;
-	z-index: 2;
+	z-index: 3;
 	background-color: #fff;
 	box-shadow: 0 4px 4px -5px #000;
 	position: sticky;
@@ -185,13 +185,16 @@ main section {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 80px;
+	height: 100px;
 	overflow: hidden;
 }
 .navbar__nav a.logo {
 	text-decoration: none;
 	font-size: 28px;
 	color: #000;
+}
+.navbar__nav a.logo img {
+	width: 200px;
 }
 .navbar__nav i {
 	padding-right: 5px;
@@ -583,6 +586,9 @@ main section {
 .why-us-content .box:hover {
 	border: 1px solid #3066be;
 }
+.why-us-content .box-copy a {
+	margin-top: 2rem;
+}
 
 .why-us-content .box .box-copy h3 {
 	font-size: 28px;
@@ -661,7 +667,7 @@ main section {
 
 .logos:hover .logos-slide {
 	animation-play-state: paused;
-  }
+}
 
 .logos-slide {
 	display: inline-block;
@@ -693,7 +699,7 @@ main section {
 
 .price-header {
 	color: #050037;
-	margin-bottom: 25px;
+
 }
 .price-header h2 {
 	font-size: 4.2rem;
@@ -714,10 +720,9 @@ main section {
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
-
 	align-items: flex-start;
 	justify-content: center;
-	padding: 2rem 0;
+	padding: 6rem 0;
 }
 .price-copy .pricebox {
 	padding: 25px;
@@ -815,6 +820,45 @@ main section {
 	color: rgb(99, 99, 99);
 }
 
+.price .pricebox-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.price .pricebox-footer h3 {
+	font-size: 3.2rem;
+	color: #05012b;
+	margin-bottom: 0.7rem;
+	text-align: center;
+}
+
+.price .pricebox-footer p {
+	font-size: 2.2rem;
+	width: 50%;
+	text-align: center;
+}
+.price .pricebox-footer .cta {
+	padding: 15px 20px;
+	font-size: 2rem;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	max-width: 220px;
+	text-align: center;
+	background-color: #3066be;
+	margin-top: 3rem;
+	transition: all 0.3s;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 10px;
+}
+
+.price .pricebox-footer .cta:hover {
+	background-color: #1c478a;
+	box-shadow: #3066be 0px 7px 29px 0px;
+}
+
 @media (max-width: 1000px) {
 	.price-copy .price-boxes {
 		flex-direction: column;
@@ -823,10 +867,12 @@ main section {
 		width: 100%;
 		margin-bottom: 2.5rem;
 	}
-	.pricebox .pricebox-header h2{
+	.pricebox .pricebox-header h2 {
 		font-size: 3.2rem;
 	}
-
+	.price .pricebox-footer p {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 1001px) {
