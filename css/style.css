@@ -625,7 +625,7 @@ main section {
 
 .technologies {
 	padding: 0;
-	background: rgb(162, 162, 162);
+	background: rgb(209, 209, 209);
 }
 
 @keyframes slide {
@@ -640,7 +640,7 @@ main section {
 .logos {
 	overflow: hidden;
 	padding: 60px 0;
-	background: rgb(162, 162, 162);
+	background: rgb(210, 210, 210);
 	white-space: nowrap;
 	position: relative;
 }
@@ -657,12 +657,12 @@ main section {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(162, 162, 162, 0), rgb(162, 162, 162));
+	background: linear-gradient(to left, rgba(209, 209, 209, 0), rgb(209, 209, 209));-
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(162, 162, 162, 0), rgb(162, 162, 162));
+	background: linear-gradient(to right, rgba(209, 209, 209, 0), rgb(209, 209, 209));
 }
 
 .logos:hover .logos-slide {
