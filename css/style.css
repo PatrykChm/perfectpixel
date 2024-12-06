@@ -291,7 +291,7 @@ main section {
 }
 
 .header {
-	background: linear-gradient(38deg, rgb(217, 249, 255) 0%, rgb(220, 239, 252) 100%);
+	background: linear-gradient(38deg, rgb(248, 254, 255) 0%, rgb(217, 239, 254) 100%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -657,7 +657,7 @@ main section {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(209, 209, 209, 0), rgb(209, 209, 209));-
+	background: linear-gradient(to left, rgba(209, 209, 209, 0), rgb(209, 209, 209));
 }
 
 .logos:after {
