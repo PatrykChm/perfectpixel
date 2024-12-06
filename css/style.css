@@ -16,10 +16,6 @@ html {
 	font-family: 'Instrument Sans', sans-serif;
 }
 
-main {
-	overflow-x: hidden;
-}
-
 main section {
 	padding: 60px;
 }
@@ -27,6 +23,19 @@ main section {
 	background-color: transparent;
 	border: 1px solid #3066be;
 	color: #3066be;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px 15px;
+	margin-top: 10px;
+	border-radius: 8px;
+	transition: all 0.3s;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cta--outline:hover {
+	background-color: #004b91;
+	color: white;
+	box-shadow: #3066be 0px 7px 29px 0px;
 }
 
 .white-block {
@@ -421,7 +430,10 @@ main section {
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 	background: #3066be;
 }
-.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
 	height: 8px;
 }
 
@@ -562,6 +574,12 @@ main section {
 	flex-direction: column;
 	transition: border 0.3s;
 }
+
+.why-us-content .box-copy {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 .why-us-content .box:hover {
 	border: 1px solid #3066be;
 }
@@ -572,7 +590,7 @@ main section {
 	color: #050037;
 }
 .why-us-content .box .box-copy p {
-	font-size: 16px;
+	font-size: 18px;
 	color: #050037;
 }
 
@@ -668,19 +686,120 @@ main section {
 
 /* WHY WORTH STYLES */
 
-.whyworth-wrapper {
+.price-wrapper {
 	max-width: 1600px;
 	margin: 0 auto;
 }
 
-.whyworth-header {
+.price-header {
 	color: #050037;
+	margin-bottom: 25px;
 }
-.whyworth-header h2 {
+.price-header h2 {
 	font-size: 4.2rem;
 }
-.whyworth-header span {
+.price-header span {
 	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.price-copy {
+	background-color: transparent;
+	background-image: radial-gradient(circle, rgba(0, 0, 0, 0.112), 2px, transparent 1px);
+	background-size: 20px 20px;
+}
+
+.price-copy .price-boxes {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+
+	align-items: flex-start;
+	justify-content: center;
+	padding-top: 20px;
+}
+.price-copy .pricebox {
+	padding: 25px;
+	border: 1px solid #3066be71;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 25%;
+	position: relative;
+	transition: all 0.3s;
+}
+.price-copy .pricebox:hover {
+	border: 1px solid #3066be;
+}
+.pricebox .pricebox-header {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	align-items: center;
+}
+.pricebox .pricebox-header h2 {
+	font-size: 3.2rem;
+	margin-bottom: 0.5rem;
+}
+.pricebox .pricebox-header p {
+	font-size: 1.6rem;
+	text-align: center;
+	width: 90%;
+}
+
+.pricebox .pricebox-points {
+	display: flex;
+	flex-direction: column;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.pricebox .pricebox-points .point {
+	display: flex;
+	margin-bottom: 1rem;
+	align-items: center;
+}
+.pricebox .pricebox-points .point span {
+	font-size: 2.4rem;
+	margin-right: 1rem;
+	color: #004b91;
+}
+.pricebox .pricebox-points .point p {
+	font-size: 1.8rem;
+}
+
+.pricebox .pricebox-time {
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+	font-size: 1.6rem;
+}
+
+.pricebox .pricebox-price {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2rem;
+}
+.pricebox .pricebox-price p:first-of-type {
+	font-size: 4.2rem;
+	font-weight: 700;
+}
+
+.pricebox .pricebox-price p span {
+	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pricebox a {
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: white;
 }
