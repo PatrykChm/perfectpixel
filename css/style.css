@@ -926,7 +926,6 @@ main section {
 .blog-boxes .box {
 	background-image: url(../img/box-blog1.jpg);
 	background-size: cover;
-
 	height: 350px;
 	width: 25%;
 	display: flex;
@@ -935,6 +934,18 @@ main section {
 	justify-content: flex-end;
 	border-radius: 10px;
 	text-decoration: none;
+	position: relative;
+}
+.blog-boxes .box .box-time {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	font-size: 1.8rem;
+	color: white;
+	align-items: center;
 }
 .blog-boxes .box .box-content {
 	display: flex;
@@ -965,4 +976,24 @@ main section {
 }
 .blog-boxes .box .box-content button span {
 	font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+	.blog-boxes .box {
+		width: 100%;
+	}
+	.blog-boxes {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1001px) {
+	.blog-boxes .box {
+		width: 47%;
+	}
+	.blog-boxes {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
