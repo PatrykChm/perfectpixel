@@ -26,3 +26,7 @@ var swiper = new Swiper('.mySwiper', {
 
 var copy = document.querySelector('.logos-slide').cloneNode(true)
 document.querySelector('.logos').appendChild(copy)
+
+console.clear()
+
+AOS.init()

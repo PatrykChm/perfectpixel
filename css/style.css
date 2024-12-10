@@ -20,6 +20,7 @@ html {
 main section {
 	padding: 60px;
 }
+
 .cta--outline {
 	background-color: transparent;
 	border: 1px solid #3066be;
@@ -946,6 +947,9 @@ main section {
 	font-size: 1.8rem;
 	color: white;
 	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.525);
+	padding: 5px 10px;
+	border-radius: 6px;
 }
 .blog-boxes .box .box-content {
 	display: flex;
@@ -995,5 +999,99 @@ main section {
 	.blog-boxes {
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+
+	.blogs .blog-header h2 {
+		font-size: 3.2rem;
+	}
+}
+
+/* WORKSHOP SECTION STYLES */
+.workshop-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.workshop-wrapper .extrasbg {
+	position: absolute;
+	left: -15%;
+	top: 12%;
+	transform: scale(0.7) rotate(40deg);
+	opacity: 0.8;
+}
+.workshop-wrapper .workshop-header span {
+	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.workshop-wrapper .workshop-header h2 {
+	font-size: 4.5rem;
+}
+.workshop-wrapper .workshop-header {
+	margin-bottom: 4.5rem;
+}
+
+.workshop-boxes {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	position: relative;
+	z-index: 100;
+}
+.workshop-boxes .box {
+	display: flex;
+	flex-direction: row;
+	padding: 25px;
+	border: 1px solid #3066be71;
+	border-radius: 16px;
+	position: relative;
+	z-index: 100;
+	backdrop-filter: blur(10px);
+}
+.workshop-boxes .box-img {
+	width: 50%;
+}
+.workshop-boxes .box-img img {
+	width: 100%;
+}
+
+.workshop-boxes .box-copy {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+}
+
+.workshop-boxes .box-copy h3 {
+	font-size: 3.8rem;
+	margin-bottom: 1.5rem;
+	color: var(--text-color);
+}
+.workshop-boxes .box-copy p {
+	font-size: 2rem;
+	color: var(--text-color);
+}
+.workshop-boxes .box-copy a {
+	width: 30%;
+	text-align: center;
+}
+
+.workshop-boxes .box-copy-signs {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.workshop-boxes .box-copy-signs .sign {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+	.workshop .workshop-header h2 {
+		font-size: 3.2rem;
 	}
 }
