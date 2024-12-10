@@ -27,7 +27,7 @@ main section {
 	color: #3066be;
 	text-decoration: none;
 	font-size: 18px;
-	padding: 10px 15px;
+	padding: 15px 20px;
 	margin-top: 10px;
 	border-radius: 8px;
 	transition: all 0.3s;
@@ -41,7 +41,7 @@ main section {
 }
 
 .cta--blue {
-	padding: 15px 10px;
+	padding: 15px 20px;
 	font-size: 2rem;
 	text-decoration: none;
 	color: rgb(255, 255, 255);
@@ -206,7 +206,7 @@ main section {
 .navbar {
 	width: 100%;
 	top: 0;
-	z-index: 3;
+	z-index: 101;
 	background-color: #fff;
 	box-shadow: 0 4px 4px -5px #000;
 	position: sticky;
@@ -937,6 +937,10 @@ main section {
 	text-decoration: none;
 	position: relative;
 }
+.blog-boxes .box:hover {
+	transform: translatey(10px) !important;
+}
+
 .blog-boxes .box .box-time {
 	display: flex;
 	flex-direction: row;
@@ -1015,10 +1019,17 @@ main section {
 
 .workshop-wrapper .extrasbg {
 	position: absolute;
-	left: -15%;
+	left: -16%;
 	top: 12%;
-	transform: scale(0.7) rotate(40deg);
-	opacity: 0.8;
+	transform: scale(0.5) rotate(40deg);
+	opacity: 0.6;
+}
+.workshop-wrapper .extrasbg2 {
+	position: absolute;
+	right: -15%;
+	bottom: 1%;
+	transform: scale(0.65) rotate(220deg);
+	opacity: 0.6;
 }
 .workshop-wrapper .workshop-header span {
 	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
@@ -1049,6 +1060,7 @@ main section {
 	position: relative;
 	z-index: 100;
 	backdrop-filter: blur(10px);
+	background-color: #c1c1c14a;
 }
 .workshop-boxes .box-img {
 	width: 50%;
@@ -1088,10 +1100,56 @@ main section {
 	display: flex;
 	gap: 15px;
 	margin-bottom: 10px;
+	color: #004b91;
+}
+.workshop-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+.workshop-footer a {
+	max-width: 310px;
+	position: relative;
+	z-index: 101;
 }
 
 @media (max-width: 1000px) {
 	.workshop .workshop-header h2 {
 		font-size: 3.2rem;
 	}
+	.workshop-boxes .box {
+		flex-direction: column;
+	}
+	.workshop-boxes .box-img {
+		width: 100%;
+	}
+	.workshop-boxes .box-copy {
+		width: 100%;
+	}
+
+	.workshop-boxes .box-copy h3 {
+		font-size: 3.2rem;
+	}
+
+	.workshop-boxes .box-copy p {
+		font-size: 18px;
+	}
+	.workshop-wrapper .extrasbg2 {
+		position: absolute;
+		right: -15%;
+		bottom: 3%;
+		transform: scale(0.65) rotate(220deg);
+		opacity: 0.6;
+	}
+	.workshop-boxes .box-copy a {
+		width: 50%;
+	}
+}
+
+/* FOOTER */
+
+.footer {
+	background-color: black;
+	color: #fff;
 }
