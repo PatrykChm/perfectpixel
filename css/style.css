@@ -1181,7 +1181,7 @@ main section {
 /* FOOTER */
 
 .footer {
-	background-color: #02001c;
+	background: linear-gradient(135deg, #000000, #000002, #00000c, #01001e, #02002f, #030036, #030039, #030039);
 	color: #fff;
 	padding-bottom: 20px;
 }
