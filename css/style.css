@@ -19,6 +19,9 @@ html {
 
 main section {
 	padding: 60px;
+	overflow: hidden;
+	position: relative;
+	z-index: 50;
 }
 
 .cta--outline {
@@ -172,6 +175,7 @@ main section {
 	cursor: pointer;
 	border: 0;
 	background: transparent;
+	z-index: 101;
 }
 .hamburger__box {
 	position: relative;
@@ -207,9 +211,14 @@ main section {
 	width: 100%;
 	top: 0;
 	z-index: 101;
-	background-color: #fff;
 	box-shadow: 0 4px 4px -5px #000;
-	position: sticky;
+	position: fixed;
+	background-color: transparent;
+	background: rgba(228, 228, 228, 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8.2px);
+	-webkit-backdrop-filter: blur(8.2px);
+	border: 1px solid rgba(228, 228, 228, 0.09);
 }
 .navbar__nav {
 	display: flex;
@@ -233,30 +242,31 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 20px;
-	height: 40vh;
-	width: 60%;
-	top: 80px;
+	gap: 100px;
+	height: 90vh;
+	width: 100%;
+	top: 100px;
 	right: 0;
 	opacity: 0;
-	transform: translateX(100%);
-	background-color: #624848;
+	transform: translatey(-100%);
 	transition: all 0.3s;
 	z-index: 100;
 	justify-content: center;
 	position: fixed;
-	overflow-x: hidden;
+	/* From https://css.glass */
 }
 .navbar__item {
 	list-style: none;
 	display: inline-block;
 	cursor: pointer;
-	font-size: 2.5rem;
+	font-size: 3.2rem;
+	font-weight: 500;
+	letter-spacing: 3px;
 }
 .navbar__item a {
 	color: #000;
 	text-decoration: none;
-
+	font-size: 3.2rem;
 	transition: color 0.3s;
 }
 .navbar__item:hover a {
@@ -264,8 +274,9 @@ main section {
 }
 
 .show-menu {
-	transform: translateX(0);
+	transform: translateY(0);
 	opacity: 1;
+	background: rgba(228, 228, 228); /* Wyższa przejrzystość */
 }
 
 @-webkit-keyframes a {
@@ -303,7 +314,7 @@ main section {
 		background: none;
 		position: static;
 		width: auto;
-		gap: 0;
+		gap: 10px;
 	}
 	.navbar__list .navbar__item {
 		margin-top: 0;
@@ -311,12 +322,22 @@ main section {
 		font-size: 20px;
 		-webkit-transition: color 0.3s, background-color 0.3s;
 		transition: color 0.3s, background-color 0.3s;
+		border-radius: 8px;
 	}
 	.navbar__list .navbar__item:hover {
 		background-color: #000;
+		background: rgba(0, 0, 0, 0.41);
+		border-radius: 8px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(15.2px);
+		-webkit-backdrop-filter: blur(15.2px);
+		border: 1px solid rgba(0, 0, 0, 0.09);
 	}
 	.navbar__list .navbar__item:hover a {
 		color: #fff;
+	}
+	.navbar__item a {
+		font-size: 2.2rem;
 	}
 }
 
@@ -326,6 +347,7 @@ main section {
 	align-items: center;
 	justify-content: center;
 	padding: 0;
+	padding-top: 100px;
 }
 .header .content {
 	height: 100%;
@@ -711,7 +733,9 @@ main section {
 }
 
 /* WHY WORTH STYLES */
-
+.price {
+	overflow: hidden;
+}
 .price-wrapper {
 	max-width: 1600px;
 	margin: 0 auto;
@@ -938,7 +962,7 @@ main section {
 	position: relative;
 }
 .blog-boxes .box:hover {
-	transform: translatey(10px) !important;
+	transform: translatey(5px) !important;
 }
 
 .blog-boxes .box .box-time {
@@ -1015,21 +1039,22 @@ main section {
 	max-width: 1600px;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 }
 
 .workshop-wrapper .extrasbg {
 	position: absolute;
-	left: -16%;
-	top: 12%;
+	left: -15%;
+	top: 0;
 	transform: scale(0.5) rotate(40deg);
-	opacity: 0.6;
+	opacity: 0.2;
 }
 .workshop-wrapper .extrasbg2 {
 	position: absolute;
 	right: -15%;
 	bottom: 1%;
 	transform: scale(0.65) rotate(220deg);
-	opacity: 0.6;
+	opacity: 0.2;
 }
 .workshop-wrapper .workshop-header span {
 	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
@@ -1061,9 +1086,12 @@ main section {
 	z-index: 100;
 	backdrop-filter: blur(10px);
 	background-color: #c1c1c14a;
+	overflow: hidden;
 }
 .workshop-boxes .box-img {
 	width: 50%;
+	position: relative;
+	z-index: 200;
 }
 .workshop-boxes .box-img img {
 	width: 100%;
@@ -1074,6 +1102,8 @@ main section {
 	flex-direction: column;
 	width: 50%;
 	justify-content: center;
+	position: relative;
+	z-index: 200;
 }
 
 .workshop-boxes .box-copy h3 {
@@ -1120,6 +1150,7 @@ main section {
 	}
 	.workshop-boxes .box {
 		flex-direction: column;
+		position: relative;
 	}
 	.workshop-boxes .box-img {
 		width: 100%;
@@ -1140,7 +1171,7 @@ main section {
 		right: -15%;
 		bottom: 3%;
 		transform: scale(0.65) rotate(220deg);
-		opacity: 0.6;
+		opacity: 0.2;
 	}
 	.workshop-boxes .box-copy a {
 		width: 50%;
@@ -1150,6 +1181,52 @@ main section {
 /* FOOTER */
 
 .footer {
-	background-color: black;
+	background-color: #02001c;
 	color: #fff;
+	padding-bottom: 20px;
+}
+.footer-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.footer-content {
+	display: flex;
+}
+.footer-content .row {
+	width: 33%;
+	color: white;
+}
+.footer-content .first-row img {
+	width: 100%;
+	max-width: 300px;
+}
+.footer-content .first-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-content .row h3 {
+	font-size: 3.4rem;
+	margin-bottom: 2.5rem;
+}
+
+.footer-content .row ul {
+	list-style: none;
+	font-size: 2.2rem;
+}
+.footer-content .row li {
+	margin-bottom: 1rem;
+}
+
+.footer-content .row a {
+	color: white;
+	text-decoration: none;
+}
+.footer-wrapper .footer-reg {
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 2rem;
 }
