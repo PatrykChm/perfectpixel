@@ -50,6 +50,27 @@ var swiper = new Swiper('.mySwiper', {
 	},
 })
 
+// Pobranie elementów
+const tabHeaders = document.querySelectorAll('.tab-header');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+// Funkcja przełączania
+tabHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        const tabNumber = header.dataset.tab;
+
+        // Deaktywacja wszystkich nagłówków i paneli
+        tabHeaders.forEach(h => h.classList.remove('active'));
+        tabPanels.forEach(panel => panel.classList.remove('active'));
+
+        // Aktywacja klikniętego nagłówka i odpowiadającego panelu
+        header.classList.add('active');
+        document.querySelector(`.tab-panel[data-tab="${tabNumber}"]`).classList.add('active');
+    });
+});
+
+
+
 var copy = document.querySelector('.logos-slide').cloneNode(true)
 document.querySelector('.logos').appendChild(copy)
 
