@@ -260,7 +260,7 @@ main section {
 	cursor: pointer;
 	font-size: 3.2rem;
 	font-weight: 500;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 }
 .navbar__item a {
 	color: #000;
@@ -274,7 +274,7 @@ main section {
 	transform: translateY(0);
 	opacity: 1;
 	background: rgba(228, 228, 228); /* Wyższa przejrzystość */
-	height: 90vh;
+	height: 60vh;
 }
 
 @-webkit-keyframes a {

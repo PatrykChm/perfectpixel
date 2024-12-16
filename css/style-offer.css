@@ -260,7 +260,7 @@ main section {
 	cursor: pointer;
 	font-size: 3.2rem;
 	font-weight: 500;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 }
 .navbar__item a {
 	color: #000;
@@ -273,7 +273,7 @@ main section {
 	transform: translateY(0);
 	opacity: 1;
 	background: rgba(228, 228, 228); /* Wyższa przejrzystość */
-	height: 90vh;
+	height: 60vh;
 }
 
 @-webkit-keyframes a {
@@ -455,16 +455,17 @@ main section {
 	align-items: center;
 	justify-content: center;
 	flex: 1;
-	padding: 10px 20px;
+	padding: 18px 20px;
 	background: #f7f7f7;
 	border: none;
 	cursor: pointer;
-	font-size: 2.2rem;
+	font-size: 2.3rem;
 	text-align: center;
 	transition: background 0.3s;
 }
 .tab-header span {
 	margin-right: 0.5rem;
+    font-size: 3.6rem;
 }
 
 .tab-header:nth-of-type(1) {
@@ -618,6 +619,9 @@ main section {
 	.tab-header:nth-of-type(3) {
 		border-radius: 0  0 8px 8px;
 	}
+    .tab-header span {
+        font-size: 2.4rem;
+    }
 }
 
 /* FOOTER */
