@@ -218,7 +218,6 @@ main section {
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(8.2px);
 	-webkit-backdrop-filter: blur(8.2px);
-	border: 1px solid rgba(228, 228, 228, 0.09);
 }
 .navbar__nav {
 	display: flex;

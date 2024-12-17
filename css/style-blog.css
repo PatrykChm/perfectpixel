@@ -1,0 +1,127 @@
+.digital-ex {
+	height: 650px;
+	background: conic-gradient(from 90deg at 57% 50%, #1cbbde, rgb(0, 0, 0));
+	position: relative;
+}
+
+.digital-ex-header span {
+	background: linear-gradient(90deg, #00e0fa 47.23%, #3affde 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.blogs-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.blog-boxes {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
+}
+.blog-box {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(181, 181, 181, 0.581);
+	border-radius: 16px;
+	width: 48%;
+	text-decoration: none;
+	color: black;
+	overflow: hidden;
+	position: relative;
+}
+
+.blog-box .first-row {
+	width: 100%;
+	overflow: hidden;
+}
+.blog-box .first-row img {
+	width: 100%;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	max-height: 300px;
+	object-fit: cover;
+	transition: transform 0.6s;
+}
+
+.blog-box .second-row {
+	width: 100%;
+	padding: 25px;
+}
+
+.blog-box .second-row h3 {
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+}
+.blog-box .second-row p {
+	font-size: 1.8rem;
+	margin-bottom: 0.5rem;
+}
+.blog-box button {
+	cursor: pointer;
+}
+.blog-box:hover .first-row img {
+	transform: scale(1.02);
+}
+.cta--outline {
+	padding: 15px 40px;
+}
+
+.extras-blog {
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+	font-size: 1.4rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.time-extras {
+	position: absolute;
+	display: flex;
+	gap: 5px;
+	color: white;
+	align-items: center;
+	left: 25px;
+	top: 25px;
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 6px;
+	z-index: 100;
+	font-size: 1.4rem;
+}
+
+.blogs-header {
+	margin-bottom: 2.5rem;
+}
+.blogs-header h3 {
+	font-size: 4.2rem;
+	margin-bottom: 0.5rem;
+}
+.blogs-header h3 span {
+	background: linear-gradient(90deg, #00e0fa 47.23%, #28caaf 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.blogs-header p {
+	font-size: 2.4rem;
+	width: 80%;
+}
+@media (max-width: 1000px) {
+	.blog-boxes {
+		flex-direction: column;
+	}
+	.blog-box {
+		width: 100%;
+	}
+	.blogs {
+		padding: 25px;
+	}
+	.blogs-header h3 {
+		font-size: 3.2rem;
+	}
+	.blogs-header p {
+		font-size: 2rem;
+        width: 100%;
+	}
+}
