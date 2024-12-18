@@ -70,22 +70,25 @@ tabHeaders.forEach(header => {
 });
 
 
-// Dodaj event nasłuchujący na scroll
 window.addEventListener('scroll', () => {
-    // Pobierz element navbar__nav
     const navbar = document.querySelector('.navbar__nav');
-    
-    // Próg przewinięcia (np. 50px)
+    const logo = document.querySelector('.logo img');
     const scrollThreshold = 50;
 
-    // Sprawdź, czy strona została przewinięta poniżej progu
     if (window.scrollY > scrollThreshold) {
         // Zmniejsz wysokość menu
-        navbar.style.height = '70px'; // Możesz zmienić wysokość na inną
-        navbar.style.transition = 'height 0.3s ease'; // Płynna zmiana
+        navbar.style.height = '70px';
+        navbar.style.transition = 'height 0.3s ease';
+
+        // Zmniejsz rozmiar logo
+        logo.style.maxWidth = '150px'; // Dopasuj do swoich potrzeb
+        logo.style.transition = 'max-width 0.3s ease';
     } else {
-        // Przywróć oryginalną wysokość
+        // Przywróć domyślną wysokość menu
         navbar.style.height = '100px';
+
+        // Przywróć domyślny rozmiar logo
+        logo.style.maxWidth = '200px';
     }
 });
 
