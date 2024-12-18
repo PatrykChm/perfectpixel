@@ -70,6 +70,26 @@ tabHeaders.forEach(header => {
 });
 
 
+// Dodaj event nasłuchujący na scroll
+window.addEventListener('scroll', () => {
+    // Pobierz element navbar__nav
+    const navbar = document.querySelector('.navbar__nav');
+    
+    // Próg przewinięcia (np. 50px)
+    const scrollThreshold = 50;
+
+    // Sprawdź, czy strona została przewinięta poniżej progu
+    if (window.scrollY > scrollThreshold) {
+        // Zmniejsz wysokość menu
+        navbar.style.height = '70px'; // Możesz zmienić wysokość na inną
+        navbar.style.transition = 'height 0.3s ease'; // Płynna zmiana
+    } else {
+        // Przywróć oryginalną wysokość
+        navbar.style.height = '100px';
+    }
+});
+
+
 
 var copy = document.querySelector('.logos-slide').cloneNode(true)
 document.querySelector('.logos').appendChild(copy)
