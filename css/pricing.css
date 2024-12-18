@@ -31,3 +31,11 @@
 	font-size: 2.4rem;
 	width: 80%;
 }
+
+
+@media (max-width:1000px){
+	.digital-ex {
+		height: 400px;
+		padding: 30px;
+	}
+}
