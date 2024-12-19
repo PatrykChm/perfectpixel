@@ -70,6 +70,29 @@ tabHeaders.forEach(header => {
 });
 
 
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar__nav');
+    const logo = document.querySelector('.logo img');
+    const scrollThreshold = 50;
+
+    if (window.scrollY > scrollThreshold) {
+        // Zmniejsz wysokość menu
+        navbar.style.height = '70px';
+        navbar.style.transition = 'height 0.3s ease';
+
+        // Zmniejsz rozmiar logo
+        logo.style.maxWidth = '150px'; // Dopasuj do swoich potrzeb
+        logo.style.transition = 'max-width 0.3s ease';
+    } else {
+        // Przywróć domyślną wysokość menu
+        navbar.style.height = '100px';
+
+        // Przywróć domyślny rozmiar logo
+        logo.style.maxWidth = '200px';
+    }
+});
+
+
 
 var copy = document.querySelector('.logos-slide').cloneNode(true)
 document.querySelector('.logos').appendChild(copy)

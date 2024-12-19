@@ -129,4 +129,10 @@
 		height: 400px;
 		padding: 30px;
 	}
+	@media (max-width: 1000px) {
+		.digital-ex {
+			height: 400px;
+			padding: 30px;
+		}
+	}
 }

@@ -8,3 +8,42 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.pricing-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.pricing-header {
+	margin-bottom: 2.5rem;
+}
+.pricing-header h3 {
+	font-size: 4.2rem;
+	margin-bottom: 0.5rem;
+}
+.pricing-header h3 span {
+	background: linear-gradient(90deg, #a333d7 47.23%, #982ceb 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pricing-header p {
+	font-size: 2.4rem;
+	width: 80%;
+}
+
+@media (max-width: 1000px) {
+	.digital-ex {
+		height: 400px;
+		padding: 30px;
+	}
+	.pricing {
+		padding: 25px;
+	}
+	.pricing-header h3 {
+		font-size: 3.2rem;
+	}
+	.pricing-header p {
+		font-size: 2rem;
+		width: 100%;
+	}
+}
