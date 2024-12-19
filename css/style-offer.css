@@ -678,3 +678,28 @@ main section {
 	margin-top: 2rem;
 	font-size: 2rem;
 }
+
+@media (max-width: 1000px) {
+	.footer-content {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.footer-content .row h3 {
+		margin-bottom: 1rem;
+		font-size: 2.2rem;
+	}
+	.footer-content .first-row {
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+	.footer-content .second-row {
+		width: 50%;
+	}
+	.footer-content .third-row {
+		width: 50%;
+	}
+	.footer-content .row ul {
+		font-size: 1.8rem;
+	}
+}

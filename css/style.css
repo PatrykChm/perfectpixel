@@ -230,9 +230,9 @@ main section {
 	text-decoration: none;
 	font-size: 28px;
 	color: #000;
-	display: flex
-	;
-	justify-content: center;align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .navbar__nav a.logo img {
 	width: 200px;
@@ -272,7 +272,6 @@ main section {
 	font-size: 2rem;
 	transition: color 0.3s;
 }
-
 
 .show-menu {
 	transform: translateY(0);
@@ -1233,4 +1232,29 @@ main section {
 	text-align: center;
 	margin-top: 2rem;
 	font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+	.footer-content {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.footer-content .row h3 {
+		margin-bottom: 1rem;
+		font-size: 2.2rem;
+	}
+	.footer-content .first-row {
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+	.footer-content .second-row {
+		width: 50%;
+	}
+	.footer-content .third-row {
+		width: 50%;
+	}
+	.footer-content .row ul {
+		font-size: 1.8rem;
+	}
 }
