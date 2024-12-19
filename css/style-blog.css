@@ -122,6 +122,11 @@
 	}
 	.blogs-header p {
 		font-size: 2rem;
-        width: 100%;
+		width: 100%;
+	}
+
+	.digital-ex {
+		height: 400px;
+		padding: 30px;
 	}
 }
