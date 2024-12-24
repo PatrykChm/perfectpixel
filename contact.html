@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pixel - tworzenie stron internetowych</title>
+
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="./css/style-offer.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <script src="https://kit.fontawesome.com/368f6e9979.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@200" rel="stylesheet" />
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__nav">
+                <a class="logo" href="#">
+                    <img src="./img/logos/logov2.png" alt="">
+                </a>
+
+                <button class="hamburger">
+                    <span class="hamburger__box">
+                        <span class="hamburger__inner"></span>
+                    </span>
+                </button>
+
+                <ul class="navbar__list">
+                    <a class="navbar__item" href="index.html">Home</a>
+                    <a class="navbar__item" href="offer.html">Oferta</a>
+                    <a class="navbar__item" href="blog.html">Blog</a>
+                    <a class="navbar__item" href="pricing.html">Cennik</a>
+                    <a class="navbar__item" href="contact.html">Kontakt</a>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main>
+
+        <section class="digital-ex">
+            <a href="#pricing" class="down-arrow">
+                <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span>
+            </a>
+            <div class="digital-ex-wrapper">
+                <div class="digital-ex-header">
+                    <h2>Zawsze <span>w zasięgu</span> ręki</h2>
+                    <h3>Skontaktuj się z nami i znajdź odpowiedzi na swoje pytania</h3>
+                </div>
+                <div class="digidal-ex-content"></div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <h3>Jesteśmy tutaj aby Ci <span>pomóc</span></h3>
+                    <p>Potrzebujesz wsparcia w wyborze najlepszego pakietu usług? Masz pytania dotyczące projektowania
+                        stron internetowych, marketingu online lub sklepów e-commerce? A może chcesz porozmawiać o swoim
+                        pomyśle na rozwój biznesu? Skontaktuj się z nami – chętnie doradzimy, odpowiemy na wszystkie
+                        Twoje pytania i wspólnie znajdziemy idealne rozwiązanie dopasowane do Twoich potrzeb.</p>
+                </div>
+                <div class="contact-content">
+
+                    <div class="first-row">
+                        <div class="row-header">
+                            <h3>Wypełnij formularz kontaktowy</h3>
+                            <p>Odpowiemy do 24 godzin</p>
+                        </div>
+
+                        <form action="mail.php" method="post" class="contact-form">
+
+                            <div class="contact-box">
+                                <label for="name">Imię:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="contact-box">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="contact-box">
+                                <label for="msg">Wiadomość:</label>
+                                <textarea name="msg" id="msg" required></textarea>
+                            </div>
+
+                            <button>Wyślij</button>
+
+                        </form>
+
+                        <p class="msg-status"></p>
+                    </div>
+
+                    <div class="second-row">
+                        <p>tu beda sociale </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="footer" id="footer">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <div class="first-row row">
+                        <a href=""><img src="./img/logos/logo.png" alt=""></a>
+                    </div>
+                    <div class="second-row row">
+                        <h3>Perfect-Pixel</h3>
+                        <ul>
+                            <li><a href="">Strona główna</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Cennik</a></li>
+                            <li><a href="">Nasze realizacje</a></li>
+                            <li><a href="">Skontaktuj się</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="third-row row">
+                        <h3>Sociale</h3>
+                        <ul>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">X</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer-reg">Perfect Pixel 2024 &reg;</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>

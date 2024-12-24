@@ -1,0 +1,131 @@
+.digital-ex {
+	height: 650px;
+	background: conic-gradient(from 90deg at 57% 50%, #3d00e5, rgb(0, 0, 0));
+	position: relative;
+}
+.digital-ex-header span {
+	background: linear-gradient(190deg, #339bd7 47.23%, #1638fa 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.contact-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.contact-header {
+	margin-bottom: 2.5rem;
+}
+.contact-header h3 {
+	font-size: 4.2rem;
+	margin-bottom: 0.5rem;
+}
+.contact-header h3 span {
+	background: linear-gradient(190deg, #339bd7 47.23%, #1638fa 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.contact-header p {
+	font-size: 2.2rem;
+	width: 80%;
+}
+
+.contact-content{
+    display: flex;
+}
+.contact-content .row-header{
+    margin-bottom: 1rem;
+}
+.contact-content h3{
+    font-size: 2.2rem;
+
+}
+.contact-content p{
+    font-size: 1.8rem;
+}
+
+.contact-form {
+	padding: 30px;
+	width: 600px;
+	background-color: #ecececc8;
+	border-radius: 16px;
+    padding-top: 10px;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+
+.contact-form label {
+	margin-bottom: 10px;
+	font-size: 1.8rem;
+	color: rgb(37, 37, 37);
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+	padding: 15px;
+	font-size: 16px;
+	border: 2px solid hsl(0, 0%, 67%);
+	border-radius: 8px;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	min-height: 150px;
+}
+
+.contact-form button {
+	padding: 12px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
+	color: #000000;
+	background-color: rgb(219, 219, 219);
+
+}
+
+.msg-status {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50px;
+	padding: 30px;
+	width: 600px;
+	border-radius: 12px;
+	font-size: 24px;
+}
+
+.success {
+	display: flex;
+	background-color: hsl(143, 83%, 55%);
+}
+
+.error {
+	display: flex;
+	background-color: hsl(9, 100%, 64%);
+}
+
+@media (max-width: 1000px) {
+	.digital-ex {
+		height: 400px;
+		padding: 30px;
+	}
+	.contact {
+		padding: 25px;
+	}
+	.contact-header h3 {
+		font-size: 3.2rem;
+	}
+	.contact-header p {
+		font-size: 2rem;
+		width: 100%;
+	}
+}
