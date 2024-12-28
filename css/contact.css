@@ -29,10 +29,10 @@
 	gap: 25px;
 }
 .contact-content .row-header {
-	margin-bottom: 1rem;
+	margin-bottom: 1.3rem;
 }
 .contact-content h3 {
-	font-size: 2.2rem;
+	font-size: 4.2rem;
 }
 .contact-content p {
 	font-size: 1.8rem;
@@ -44,7 +44,7 @@
 	background-color: #f0f0f09a;
 	border-radius: 16px;
 	padding-top: 10px;
-	border:1px solid rgba(0, 0, 0, 0.155);
+	border: 1px solid rgba(0, 0, 0, 0.155);
 }
 
 .contact-box {
@@ -64,9 +64,8 @@
 .contact-form button {
 	padding: 15px;
 	font-size: 16px;
-	border:1px solid rgba(0, 0, 0, 0.155);
+	border: 1px solid rgba(0, 0, 0, 0.155);
 	border-radius: 8px;
-
 }
 
 .contact-form textarea {
@@ -121,14 +120,13 @@
 	flex-direction: column;
 }
 .contact-content .socials-logos h4 {
-	font-size: 1.6rem;
+	font-size: 2.2rem;
 }
 .contact-content .socials-logo {
 	display: flex;
 	align-items: center;
 	margin-top: 1rem;
-	gap: 1rem
-	;
+	gap: 1rem;
 }
 .contact-content .socials-logo img {
 	max-width: 50px;
@@ -142,10 +140,12 @@
 }
 
 .contact-content .direct-contact-header h4 {
-	font-size: 1.6rem;
-}.contact-content .direct-contact-content{
+	font-size: 2.2rem;
+}
+.contact-content .direct-contact-content {
 	margin-top: 1rem;
-}.contact-content .direct-contact-content a span{
+}
+.contact-content .direct-contact-content a span {
 	font-size: 3rem;
 }
 .contact-content .direct-contact-content a {
@@ -160,10 +160,10 @@
 	padding: 1rem;
 	border-radius: 8px;
 	border: 1px solid rgba(0, 0, 0, 0.155);
-	transition: background-color .3s;
+	transition: background-color 0.3s;
 }
 
-.contact-content .direct-contact-content a:hover{
+.contact-content .direct-contact-content a:hover {
 	background-color: #ebebeba4;
 }
 @media (max-width: 1000px) {
@@ -175,7 +175,7 @@
 		padding: 25px;
 	}
 
-	.contact-form{
+	.contact-form {
 		padding: 20px;
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -187,5 +187,16 @@
 	.contact-content .first-row,
 	.contact-content .second-row {
 		width: 100%;
+	}
+
+	.contact-content h3 {
+		font-size: 3.2rem;
+	}
+	.contact-content .socials-logos h4 {
+		font-size: 2rem;
+	}
+
+	.contact-content .direct-contact-header h4 {
+		font-size: 2rem;
 	}
 }
