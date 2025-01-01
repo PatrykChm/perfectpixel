@@ -344,7 +344,6 @@ main section {
 	}
 }
 
-
 /* FOOTER */
 
 .footer {
@@ -374,7 +373,6 @@ main section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 .footer-content .row h3 {
 	font-size: 3.4rem;
@@ -424,8 +422,6 @@ main section {
 	}
 }
 
-
-
 /* DIGITALEX */
 
 /* OFFER */
@@ -433,6 +429,7 @@ main section {
 	height: 650px;
 	background: conic-gradient(from 90deg at 57% 50%, #1c67de, rgba(0, 0, 0, 1));
 	position: relative;
+	margin-top: 100px;
 }
 .digital-ex-wrapper {
 	max-width: 1600px;
