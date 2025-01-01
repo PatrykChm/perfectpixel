@@ -1,0 +1,80 @@
+.blogpage-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	margin-top: 4rem;
+	padding: 20px;
+}
+.blogpage-wrapper hr {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	width: 50%;
+}
+.blogpage-header h1 {
+	font-size: 3.8rem;
+}
+.blogpage-header span {
+	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.blog-details {
+	display: flex;
+	gap: 1rem;
+	font-size: 1.8rem;
+	font-style: italic;
+}
+.blog-content {
+	font-size: 2rem;
+}
+.blog-content p {
+	margin-bottom: 1.5rem;
+    text-align: justify;
+}
+.blog-content h2 {
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+.cta-back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.cta--blue {
+	padding: 15px 20px;
+	font-size: 2rem;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	max-width: 220px;
+	text-align: center;
+	background-color: #3066be;
+	transition: all 0.3s;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+.cta--blue:hover {
+	background-color: #1c478a;
+	box-shadow: #3066be 0px 7px 29px 0px;
+}
+.cta--outline {
+	background-color: transparent;
+	border: 1px solid #3066be;
+	color: #3066be;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 15px 20px;
+	border-radius: 8px;
+	transition: all 0.3s;
+	margin-top: 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cta--outline:hover {
+	background-color: #004b91;
+	color: white;
+	box-shadow: #3066be 0px 7px 29px 0px;
+}
