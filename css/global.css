@@ -61,6 +61,22 @@ main section {
 	box-shadow: #3066be 0px 7px 29px 0px;
 }
 
+.cta--whiteout {
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 15px 20px;
+	margin-top: 10px;
+	border-radius: 8px;
+	transition: all 0.3s;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cta--whiteout:hover {
+background-color: #0082fa;
+}
+
 .section-header {
 	font-size: 4.2rem;
 }
