@@ -6,7 +6,6 @@
 	padding-top: 100px;
 }
 
-
 .blogpage-header {
 	height: 350px;
 	max-width: 1400px;
@@ -22,6 +21,7 @@
 	position: relative;
 	z-index: 200;
 	margin-bottom: 4rem;
+	padding: 10px;
 }
 .hero-blur {
 	position: absolute;
@@ -35,6 +35,7 @@
 	font-size: 3.8rem;
 	position: relative;
 	z-index: 200;
+	text-align: center;
 	color: white;
 }
 .blogpage-header span {
@@ -48,18 +49,20 @@
 	font-size: 1.8rem;
 	font-style: italic;
 	color: white;
-	position: relative;z-index: 200;
+	position: relative;
+	z-index: 200;
 }
 .blog-content {
 	font-size: 2rem;
 }
 .blog-content p {
-	margin-bottom: 1.5rem;
+	margin-bottom: 3rem;
 	text-align: justify;
 	color: var(--text-color);
 }
 .blog-content h2 {
 	font-size: 2.2rem;
+	margin-bottom: 0.8rem;
 	font-weight: 600;
 	color: var(--text-color);
 }
@@ -106,4 +109,19 @@
 	background-color: #004b91;
 	color: white;
 	box-shadow: #3066be 0px 7px 29px 0px;
+}
+
+.blog-content ul {
+	color: var(--text-color);
+	margin-left: 4rem;
+}
+
+.blog-content li {
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+	.cta-back {
+		flex-direction: column;
+	}
 }
