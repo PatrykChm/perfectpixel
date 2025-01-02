@@ -74,7 +74,7 @@ main section {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .cta--whiteout:hover {
-background-color: #0082fa;
+	background-color: #0082fa;
 }
 
 .section-header {
@@ -86,7 +86,6 @@ background-color: #0082fa;
 		font-size: 3.2rem;
 	}
 }
-
 
 .btn-special-animation {
 	position: relative;
@@ -234,6 +233,8 @@ background-color: #0082fa;
 }
 .navbar__nav a.logo img {
 	width: 200px;
+	position: relative;
+	z-index: 500;
 }
 .navbar__nav i {
 	padding-right: 5px;
@@ -242,9 +243,9 @@ background-color: #0082fa;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 20px;
+
 	width: 100%;
-	top: 100px;
+	top: 70px;
 	right: 0;
 	opacity: 0;
 	transform: translatey(-100%);
@@ -262,18 +263,16 @@ background-color: #0082fa;
 	letter-spacing: 1px;
 	text-decoration: none;
 	color: var(--text-color);
+	padding: 15px;
+	border-radius: 8px;
+	
 }
-.navbar__item a {
-	color: #000;
-	text-decoration: none;
-	font-size: 2rem;
-	transition: color 0.3s;
-}
+
 
 .show-menu {
 	transform: translateY(0);
 	opacity: 1;
-	background: rgba(228, 228, 228); /* Wyższa przejrzystość */
+	background: rgb(239 239 239); /* Wyższa przejrzystość */
 	height: 60vh;
 }
 
