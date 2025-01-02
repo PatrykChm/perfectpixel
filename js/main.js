@@ -35,21 +35,6 @@ navItems.forEach(function (item) {
 // Ukrycie menu po scrollowaniu strony
 window.addEventListener('scroll', hideMenuOnScroll);
 
-var swiper = new Swiper('.mySwiper', {
-	// autoplay: {
-	// 	delay: 5500,
-	// 	disableOnInteraction: false,
-	// },
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'progressbar',
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-})
-
 // Pobranie elementów
 const tabHeaders = document.querySelectorAll('.tab-header');
 const tabPanels = document.querySelectorAll('.tab-panel');
