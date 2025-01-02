@@ -114,7 +114,9 @@
 .blog-content ul {
 	color: var(--text-color);
 	margin-left: 4rem;
+	margin-bottom: 2rem;
 }
+
 
 .blog-content li {
 	margin-bottom: 1rem;
