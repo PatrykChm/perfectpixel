@@ -588,6 +588,7 @@
 .blog-boxes .box {
 	background-image: url(../img/box-blog1.jpg);
 	background-size: cover;
+	background-position: center;
 	height: 350px;
 	width: 25%;
 	display: flex;
@@ -630,7 +631,8 @@
 	border-radius: 6px;
 }
 .blog-boxes .box .box-content h4 {
-	font-size: 2rem;
+	font-size: 1.8rem;
+	font-weight: 500;
 }
 .blog-boxes .box .box-content button {
 	margin-top: 0;
