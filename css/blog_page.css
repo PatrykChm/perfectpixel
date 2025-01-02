@@ -56,10 +56,12 @@
 .blog-content p {
 	margin-bottom: 1.5rem;
 	text-align: justify;
+	color: var(--text-color);
 }
 .blog-content h2 {
 	font-size: 2.2rem;
 	font-weight: 600;
+	color: var(--text-color);
 }
 .cta-back {
 	display: flex;
