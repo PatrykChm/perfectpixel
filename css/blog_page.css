@@ -1,5 +1,5 @@
 .blogpage-wrapper {
-	max-width: 1600px;
+	max-width: 1400px;
 	margin: 0 auto;
 	margin-top: 4rem;
 	padding: 20px;
@@ -9,7 +9,7 @@
 
 .blogpage-header {
 	height: 350px;
-	max-width: 1600px;
+	max-width: 1400px;
 	border-radius: 16px;
 	display: flex;
 	align-items: center;
