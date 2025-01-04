@@ -599,8 +599,14 @@
 	text-decoration: none;
 	position: relative;
 }
-.blog-boxes .box:nth-child(2){
+.blog-boxes .box:nth-child(2) {
 	background-image: url(../img/blog/blog2.png);
+}
+.blog-boxes .box:nth-child(3) {
+	background-image: url(../img/blog/blog3box.png);
+}
+.blog-boxes .box:nth-child(4) {
+	background-image: url(../img/blog/blog4box.png);
 }
 .blog-boxes .box:hover {
 	transform: translatey(5px) !important;

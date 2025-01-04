@@ -1,0 +1,12 @@
+
+.blogpage-header {
+	background-image: url(../img/blog/blog4.webp);
+}
+
+.blog-content hr {
+	margin-top: 20px;
+
+    margin-bottom: 20px;
+    background: (var(--text-color));
+    opacity: .5;
+}
