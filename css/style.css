@@ -22,18 +22,18 @@
 	justify-content: center;
 	padding: 20px;
 }
-.header .content .first-content h3 {
+.header .content .first-content h2 {
 	font-size: 3.5rem;
 	font-weight: 400;
 	margin-bottom: 1.2rem;
 	color: black;
 }
-.header .content .first-content h2 {
+.header .content .first-content h1 {
 	font-size: 4rem;
 	font-weight: 600;
 	color: black;
 }
-.header .content .first-content h2 span {
+.header .content .first-content h1 span {
 	background: linear-gradient(90deg, #0082fa 47.23%, #004b91 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -185,10 +185,10 @@
 		width: unset;
 	}
 
-	.header .content .first-content h3 {
+	.header .content .first-content h2 {
 		font-size: 2.4rem;
 	}
-	.header .content .first-content h2 {
+	.header .content .first-content h1 {
 		font-size: 3rem;
 	}
 	.header .content .first-content {
