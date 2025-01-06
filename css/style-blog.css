@@ -57,6 +57,13 @@
 .blog-box .second-row p {
 	font-size: 1.8rem;
 	margin-bottom: 0.5rem;
+	word-break: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
 }
 .blog-box button {
 	cursor: pointer;
