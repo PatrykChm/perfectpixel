@@ -220,4 +220,8 @@
 	.offer .box-copy-signs {
 		margin-left: 0;
 	}
+
+	.offer .box-img span{
+		font-size: 12rem;
+	}
 }
