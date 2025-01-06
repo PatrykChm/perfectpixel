@@ -9,6 +9,7 @@
 .offer-header h3 {
 	font-size: 4.2rem;
 	margin-bottom: 0.5rem;
+	color: var(--text-color);
 }
 .offer-header h3 span {
 	background: linear-gradient(90deg, #0082fa 47.23%, #3aa0ff 100%);
@@ -18,6 +19,7 @@
 .offer-header p {
 	font-size: 2.4rem;
 	width: 80%;
+	color: var(--text-color);
 }
 
 .tab-container {
@@ -46,7 +48,7 @@
 	font-size: 2rem;
 	text-align: center;
 	transition: background 0.3s;
-	color: black;
+	color: var(--text-color);
 }
 .tab-header span {
 	margin-right: 0.5rem;
@@ -105,25 +107,32 @@
 	margin-bottom: 0;
 }
 .offer .box-img {
-	width: 50%;
+	width: 30%;
 	position: relative;
 	z-index: 200;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.offer .box-img img {
-	width: 100%;
+.offer .box-img span {
+	font-size: 20rem;
+	color: var(--text-color);
+	background: linear-gradient(90deg, #0082fa 47.23%, #3aa0ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .offer .box-copy {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 70%;
 	justify-content: center;
 	position: relative;
 	z-index: 200;
 }
 
 .offer .box-copy h3 {
-	font-size: 3.8rem;
+	font-size: 3.4rem;
 	margin-bottom: 1.5rem;
 	color: var(--text-color);
 }
@@ -140,7 +149,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-left: 15px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 .offer .box-copy-signs .sign {
 	display: flex;
@@ -156,6 +165,7 @@
 	.offer .box {
 		flex-direction: column;
 		position: relative;
+		padding: 15px;
 	}
 	.offer .box-img {
 		width: 100%;
@@ -165,7 +175,7 @@
 	}
 
 	.offer .box-copy h3 {
-		font-size: 3.2rem;
+		font-size: 3rem;
 	}
 
 	.offer .box-copy p {
@@ -207,5 +217,7 @@
 	.tab-header span {
 		font-size: 2.4rem;
 	}
+	.offer .box-copy-signs {
+		margin-left: 0;
+	}
 }
-
