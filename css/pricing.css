@@ -180,6 +180,17 @@ td.text-right {
 	margin-bottom: 0.7rem;
 	font-size: 2rem;
 }
+
+.cta-contact {
+	display: flex;
+	margin-top: 2.5rem;
+	justify-content: center;
+}
+.disclaimer-text {
+	margin-top: 2.5rem;
+	text-align: center;
+	opacity: 0.7;
+}
 @media (max-width: 1000px) {
 	.digital-ex {
 		height: 400px;
@@ -194,6 +205,9 @@ td.text-right {
 	.pricing-header p {
 		font-size: 2rem;
 		width: 100%;
+	}
+	.sites-pricing-header h3 {
+		font-size: 3.2rem;
 	}
 
 	tr {
