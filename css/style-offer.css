@@ -6,12 +6,12 @@
 .offer-header {
 	margin-bottom: 25px;
 }
-.offer-header h3 {
+.offer-header h1 {
 	font-size: 4.2rem;
 	margin-bottom: 0.5rem;
 	color: var(--text-color);
 }
-.offer-header h3 span {
+.offer-header h1 span {
 	background: linear-gradient(90deg, #0082fa 47.23%, #3aa0ff 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -202,7 +202,7 @@
 	.offer {
 		padding: 25px;
 	}
-	.offer-header h3 {
+	.offer-header h1 {
 		font-size: 3.2rem;
 	}
 	.tab-header {

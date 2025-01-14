@@ -171,7 +171,16 @@
 .contact-content .direct-contact-content a:hover {
 	background-color: #ebebeba4;
 }
+
+.digital-ex-header h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.734);
+}
 @media (max-width: 1000px) {
+	.digital-ex-header h1 {
+		font-size: 2rem;
+	}
 	.digital-ex {
 		height: 400px;
 		padding: 30px;

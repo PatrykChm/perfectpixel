@@ -103,12 +103,12 @@
 .blogs-header {
 	margin-bottom: 2.5rem;
 }
-.blogs-header h3 {
+.blogs-header h1 {
 	font-size: 4rem;
 	margin-bottom: 0.5rem;
 	color: var(--text-color);
 }
-.blogs-header h3 span {
+.blogs-header h1 span {
 	background: linear-gradient(90deg, #00e0fa 47.23%, #28caaf 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -129,7 +129,7 @@
 	.blogs {
 		padding: 25px;
 	}
-	.blogs-header h3 {
+	.blogs-header h1 {
 		font-size: 3.2rem;
 	}
 	.blogs-header p {
