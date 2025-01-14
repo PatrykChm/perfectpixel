@@ -53,9 +53,11 @@
 .blog-box .second-row h3 {
 	font-size: 3rem;
 	margin-bottom: 0.5rem;
+	color: var(--text-color);
 }
 .blog-box .second-row p {
 	font-size: 1.8rem;
+	color: var(--text-color);
 	margin-bottom: 0.5rem;
 	word-break: break-word;
 	display: -webkit-box;
@@ -102,8 +104,9 @@
 	margin-bottom: 2.5rem;
 }
 .blogs-header h3 {
-	font-size: 4.2rem;
+	font-size: 4rem;
 	margin-bottom: 0.5rem;
+	color: var(--text-color);
 }
 .blogs-header h3 span {
 	background: linear-gradient(90deg, #00e0fa 47.23%, #28caaf 100%);
@@ -111,8 +114,9 @@
 	-webkit-text-fill-color: transparent;
 }
 .blogs-header p {
-	font-size: 2.4rem;
+	font-size: 2.1rem;
 	width: 80%;
+	color: var(--text-color);
 }
 
 @media (max-width: 1000px) {

@@ -20,6 +20,7 @@
 .pricing-header h3 {
 	font-size: 4.2rem;
 	margin-bottom: 0.5rem;
+	color: var(--text-color);
 }
 .pricing-header h3 span {
 	background: linear-gradient(90deg, #a333d7 47.23%, #982ceb 100%);
@@ -27,8 +28,9 @@
 	-webkit-text-fill-color: transparent;
 }
 .pricing-header p {
-	font-size: 2.2rem;
+	font-size: 2.1rem;
 	width: 80%;
+	color: var(--text-color);
 }
 .pricing hr {
 	width: 50%;
@@ -54,7 +56,8 @@
 	margin-bottom: 2.5rem;
 }
 .sites-pricing-header h3 {
-	font-size: 3.8rem;
+	font-size: 3.6rem;
+	color: var(--text-color);
 }
 .sites-pricing tbody {
 	border-radius: 16px;

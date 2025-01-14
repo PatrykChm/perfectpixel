@@ -7,7 +7,7 @@
 }
 
 :root {
-	--text-color: #050037;
+	--text-color: #04002b;
 	--primary-color: #00c39c;
 }
 
@@ -79,6 +79,7 @@ main section {
 
 .section-header {
 	font-size: 4.2rem;
+	color: var(--text-color);
 }
 
 @media (max-width: 1000px) {
@@ -315,9 +316,9 @@ main section {
 		margin-top: 0;
 		padding: 12px 20px;
 		font-size: 1.8rem;
-		-webkit-transition: color 0.3s, background-color 0.3s;
-		transition: color 0.3s, background-color 0.3s;
+		transition: all 0.3s;
 		border-radius: 8px;
+		border: 1px solid rgba(0, 0, 0, 0);
 	}
 	.navbar__list .navbar__item:hover {
 		background: rgba(255, 255, 255, 0.098);

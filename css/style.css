@@ -600,13 +600,13 @@
 	position: relative;
 }
 .blog-boxes .box:nth-child(2) {
-	background-image: url(../img/blog/blog2.png);
+	background-image: url(../img/blog/blog2.webp);
 }
 .blog-boxes .box:nth-child(3) {
-	background-image: url(../img/blog/blog3box.png);
+	background-image: url(../img/blog/blog3box.webp);
 }
 .blog-boxes .box:nth-child(4) {
-	background-image: url(../img/blog/blog4box.png);
+	background-image: url(../img/blog/blog4box.webp);
 }
 .blog-boxes .box:hover {
 	transform: translatey(5px) !important;

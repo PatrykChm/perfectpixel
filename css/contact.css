@@ -33,9 +33,11 @@
 }
 .contact-content h3 {
 	font-size: 4.2rem;
+	color: var(--text-color);
 }
 .contact-content p {
 	font-size: 1.8rem;
+	color: var(--text-color);
 }
 
 .contact-form {
@@ -113,6 +115,7 @@
 }
 .contact-content .second-row h3 {
 	margin-bottom: 1.3rem;
+	color: var(--text-color);
 }
 .contact-content .socials-logos {
 	display: flex;
@@ -121,6 +124,7 @@
 }
 .contact-content .socials-logos h4 {
 	font-size: 2.2rem;
+	color: var(--text-color);
 }
 .contact-content .socials-logo {
 	display: flex;
@@ -141,6 +145,7 @@
 
 .contact-content .direct-contact-header h4 {
 	font-size: 2.2rem;
+	color: var(--text-color);
 }
 .contact-content .direct-contact-content {
 	margin-top: 1rem;
