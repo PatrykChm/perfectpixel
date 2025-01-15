@@ -59,6 +59,8 @@
 	max-width: 800px;
 	border-radius: 8px;
 	margin-right: 150px;
+	aspect-ratio: 16 / 9; /* Proporcje obrazu (np. 16:9) */
+	object-fit: cover; /* Opcjonalne: dostosowanie wyświetlania */
 }
 
 .listen {
