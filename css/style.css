@@ -48,22 +48,18 @@
 .header .content .second-content {
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/header_hero.webp);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 50px;
 }
 .header .content .second-content img {
-	width: 100%;
-	max-width: 800px;
-	border-radius: 8px;
-	margin-right: 150px;
-	aspect-ratio: 16 / 9; /* Proporcje obrazu (np. 16:9) */
-	object-fit: cover; /* Opcjonalne: dostosowanie wyświetlania */
+	width: 100%; /* Dopasowanie do szerokości kontenera */
+	max-width: 800px; 
+	aspect-ratio: 16 / 9; /* Zachowanie proporcji */
+	object-fit: cover; /* Dopasowanie obrazu */
+	border-radius: 8px; /* Zaokrąglenie krawędzi */
+	margin-right: 0; /* Usuń margines */
 }
 
 .listen {
@@ -164,6 +160,7 @@
 		height: unset;
 	}
 	.header .content .second-content img {
+		max-width: 400px; /* Obrazy o większej rozdzielczości */
 		margin-right: 0;
 	}
 	.header .content .first-content {
