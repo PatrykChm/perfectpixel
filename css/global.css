@@ -419,7 +419,6 @@ main section {
 .footer {
 	background: linear-gradient(135deg, #000000, #000002, #00000c, #01001e, #02002f, #030036, #030039, #030039);
 	color: #fff;
-	padding-bottom: 20px;
 	padding-top: 20px;
 }
 .footer-wrapper {
@@ -446,13 +445,13 @@ main section {
 	justify-content: center;
 }
 .footer-content .row h3 {
-	font-size: 3rem;
-	margin-bottom: 2.5rem;
+	font-size: 2.6rem;
+	margin-bottom: 2.2rem;
 }
 
 .footer-content .row ul {
 	list-style: none;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 .footer-content .row li {
 	margin-bottom: 1rem;
@@ -465,7 +464,7 @@ main section {
 .footer-wrapper .footer-reg {
 	text-align: center;
 	margin-top: 2rem;
-	font-size: 2rem;
+	font-size: 1.4rem;
 }
 
 @media (max-width: 1000px) {

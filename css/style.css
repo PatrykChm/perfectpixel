@@ -47,7 +47,8 @@
 }
 .header .content .second-content {
 	width: 50%;
-	height: 100%;
+	height: 580px;
+	aspect-ratio: 16 / 9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,7 +56,7 @@
 }
 .header .content .second-content img {
 	width: 100%; /* Dopasowanie do szerokości kontenera */
-	max-width: 800px; 
+	max-width: 800px;
 	aspect-ratio: 16 / 9; /* Zachowanie proporcji */
 	object-fit: cover; /* Dopasowanie obrazu */
 	border-radius: 8px; /* Zaokrąglenie krawędzi */
@@ -170,6 +171,7 @@
 		width: 100%;
 		height: 300px;
 		padding: 0;
+		object-fit: contain;
 	}
 	.listen .wrapper .listen-content {
 		flex-direction: column;
