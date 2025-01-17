@@ -47,7 +47,6 @@
 		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
 /* fallback */
 @font-face {
 	font-family: 'Material Symbols Outlined';
@@ -321,7 +320,7 @@ main section {
 	align-items: center;
 
 	width: 100%;
-	top: 70px;
+	top: 0px;
 	right: 0;
 	opacity: 0;
 	transform: translatey(-100%);
@@ -420,6 +419,7 @@ main section {
 	background: linear-gradient(135deg, #000000, #000002, #00000c, #01001e, #02002f, #030036, #030039, #030039);
 	color: #fff;
 	padding-top: 20px;
+	
 }
 .footer-wrapper {
 	max-width: 1400px;

@@ -100,12 +100,12 @@
 
 .success {
 	display: flex;
-	background-color: hsl(143, 83%, 55%);
+	background-color: rgba(45, 235, 118, 0.5);
 }
 
 .error {
 	display: flex;
-	background-color: hsl(9, 100%, 64%);
+	background-color: rgba(255, 99, 71, 0.5);
 }
 .contact-content .first-row {
 	width: 50%;
