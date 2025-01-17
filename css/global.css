@@ -419,7 +419,7 @@ main section {
 	background: linear-gradient(135deg, #000000, #000002, #00000c, #01001e, #02002f, #030036, #030039, #030039);
 	color: #fff;
 	padding-top: 20px;
-	
+	padding-bottom: 10px;
 }
 .footer-wrapper {
 	max-width: 1400px;
