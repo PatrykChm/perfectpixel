@@ -99,10 +99,10 @@ main section {
 }
 
 .cky-btn {
-	border-radius: 8px;
+	border-radius: 8px !important;
 }
 .cky-consent-bar {
-	border-radius: 8px;
+	border-radius: 8px !important;
 }
 .cta--outline {
 	background-color: transparent;
