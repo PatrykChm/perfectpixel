@@ -98,6 +98,12 @@ main section {
 	z-index: 50;
 }
 
+.cky-btn {
+	border-radius: 8px;
+}
+.cky-consent-bar {
+	border-radius: 8px;
+}
 .cta--outline {
 	background-color: transparent;
 	border: 1px solid #3066be;
